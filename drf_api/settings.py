@@ -35,7 +35,7 @@ REST_FRAMEWORK = {
     )],
     'DEFAULT_PAGINATION_CLASS':
         'rest_framework.pagination.PageNumberPagination',
-    'Page_size': 10,
+    'PAGE_SIZE': 10,
     'DATETIME_FORMAT': '%d %b %Y',
 }
 if 'DEV' not in os.environ:
@@ -57,12 +57,26 @@ REST_AUTH_SERIALIZERS = {
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', os.environ.get('ALLOWED_HOST')]
+ALLOWED_HOSTS = [
+    'react-project-5.herokuapp.com',
+    'localhost',
+]
+
+if 'CLIENT_ORIGIN' in os.environ:
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN')
+    ]
+else:
+    CORS_ALLOWED_ORIGINS_REGEXES = [
+        r"^https://.*\.gitpod\.io$",
+    ]
+
+CORS_ALLOW_CREDENTIALS = True
 
 
 # Application definition
