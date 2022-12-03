@@ -8,6 +8,10 @@ Cosplay Mania is a photo-sharing platform for the wonderful world of cosplay! Us
 
 [Deployed Site](https://cosplay-mania.herokuapp.com/).
 
+## Figma Database
+
+![Database](img/database.png)
+
 
 
 
