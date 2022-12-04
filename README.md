@@ -1,3 +1,5 @@
+[Logo](img/cosplaymania-logo.png)
+
 # Cosplay Mania
 
 Welcome to Cosplay Mania!
