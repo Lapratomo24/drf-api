@@ -1,4 +1,4 @@
-[Logo](img/cosplaymania-logo.png)
+![Logo](img/cosplaymania-logo.png)
 
 # Cosplay Mania
 
