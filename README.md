@@ -92,7 +92,112 @@ Other than such "errors" as shown below, all my code is shown to be clean.
 
 ![Linter](img/ci-pep8.png)
 
+### Manual Testing
 
+**Profiles**
+
+I confirm that the Profiles section displays the different states based on whether a superuser (admin) is logged in or not, and whether they are the owner of the profile or otherwise.
+
+![Profile](img/profiles/profile_list.png)
+
+<details><summary><b>Profile Detail: Owner</b></summary>
+
+![Profile](img/profiles/profile_owner.png)
+</details><br />
+
+<details><summary><b>Profile Detail: Not Owner</b></summary>
+
+![Profile](img/profiles/profile_notowner.png)
+</details><br />
+
+<details><summary><b>Profile Not Found</b></summary>
+
+![Profile](img/profiles/profile_notfound.png)
+</details><br />
+
+**Posts**
+
+I confirm that the Posts section displays the different states based on whether a user owns the post(s) or doesn't, such as the ability to edit or delete a post. Moreover, if an uploaded image size is too big or if the post title is blank, the user will get an error message.
+
+![Post](img/posts/post_list.png)
+
+<details><summary><b>Post Detail: Owner</b></summary>
+
+![Post](img/posts/post_updatedelete.png)
+</details><br />
+
+<details><summary><b>Blank Title</b></summary>
+
+![Post](img/posts/post_blanktitle.png)
+</details><br />
+
+<details><summary><b>Post Not Found</b></summary>
+
+![Post](img/posts/post_notfound.png)
+</details><br />
+
+<details><summary><b>Post Image Size</b></summary>
+
+![Post](img/posts/post_imagesize.png)
+</details><br />
+
+**Likes**
+
+I confirm that the Likes section displays the different states based on whether a user likes a post or doesn't, such as the ability delete the like. Moreover, if a like is posted, the like count on the post is updated (shown in the comments section below).
+
+![Like](img/likes/like_list.png)
+
+<details><summary><b>Like Detail: Owner</b></summary>
+
+![Like](img/likes/like_owner.png)
+</details><br />
+
+<details><summary><b>Like Detail: Not Owner</b></summary>
+
+![Like](img/likes/like_notowner.png)
+</details><br />
+
+**Comments**
+
+I confirm that the Comments section displays the different states based on whether a user owns the comment(s) or doesn't, such as the ability to edit or delete a comment. Moreover, if a comment is posted, the comment count on the post list is updated.
+
+![Comment](img/comments/comment_list.png)
+
+<details><summary><b>Comment Detail: Owner</b></summary>
+
+![Comment](img/comments/comment_owner.png)
+</details><br />
+
+<details><summary><b>Comment Detail: Not Owner</b></summary>
+
+![Comment](img/comments/comment_notowner.png)
+</details><br />
+
+<details><summary><b>Comment on Post List</b></summary>
+
+![Comment](img/comments/comment_postlist.png)
+</details><br />
+
+**Followers**
+
+I confirm that the Followers section displays the different states based on whether a user owns the comment(s) or doesn't, such as the ability to delete a follow. Moreover, if a follow is posted, the follower/following count on the profile list is updated.
+
+![Follower](img/followers/follower_list.png)
+
+<details><summary><b>Follower Detail: Owner</b></summary>
+
+![Follower](img/followers/follower_owner.png)
+</details><br />
+
+<details><summary><b>Follower Detail: Not Owner</b></summary>
+
+![Follower](img/followers/follower_notowner.png)
+</details><br />
+
+<details><summary><b>Follower on Profile List</b></summary>
+
+![Follower](img/followers/follower_profilelist.png)
+</details><br />
 
 ## Technologies
 
