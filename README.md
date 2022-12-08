@@ -216,7 +216,7 @@ I confirm that the Followers section displays the different states based on whet
 
 ### Programs
 
-- [PostgreSQL](https://www.postgresql.org/): Open source object-relational database system.
+- [ElephantSQL](https://www.elephantsql.com/): Open source object-relational database system.
 - [Heroku](https://www.heroku.com/): Cloud platform used for the project deployment that lets companies build, deliver, monitor and scale apps.
 - [GitHub](https://github.com/): Code hosting platform for version control and collaboration.
 - [Gitpod](https://www.gitpod.io/): An IDE to create and develop this project.
