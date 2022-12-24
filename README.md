@@ -294,5 +294,4 @@ Admittedly, this final project is perhaps the most difficult learning experience
 
 ---
 
-Looking forward to my Diploma! (fingers crossed that I do not fail this project)
-
+Looking forward to my Diploma!
