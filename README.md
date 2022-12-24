@@ -228,13 +228,47 @@ For this final milestone project, Heroku is used for the deployment of the appli
 
 1. After logging in, click the New button on the top right.
 2. From the dropdown, click Create new app.
-3. Type in a relevant name, choose your region, thne click Create app button.
-5. Go to Resources tab, and type in Postgres under add-ons to select Heroku Postgres.
-6. Go to Settings tab and click Config Vars button, then add and fill in all the necessary fields to connect the API and the frontend.
-7. Before deployment, make sure to set DEBUG to False.
-8. Now go to Deploy tab and choose GitHub as your Deployment method.
-9. Connect to GitHub by clicking the Search button and choosing the correct repository.
-10. You can now choose between Enable Automatic Deploys or manually deploy the application via Deploy Branch. After Heroku finishes building the application, you can click the View button to launch and run your terminal on a new tab.
+3. Type in a relevant name, choose your region, then click Create app button.
+4. Go to Resources tab, and type in Postgres under add-ons to select Heroku Postgres (database moved to ElephantSQL).
+
+5. Back on GitHub, launch Gitpod then install and add the following apps on settings.py:
+    - 'cloudinary_storage',
+    - 'cloudinary',
+    - 'rest_framework',
+    - 'django_filters',
+    - 'rest_framework.authtoken',
+    - 'dj_rest_auth',
+    - 'django.contrib.sites',
+    - 'allauth',
+    - 'allauth.account',
+    - 'allauth.socialaccount',
+    - 'dj_rest_auth.registration',
+    - 'corsheaders',
+
+6. Create a Django project via the command 'django-admin startproject new_project'.
+7. Back on Heroku, add several Config Vars:
+    - ALLOWED HOST
+    - CLIENT_ORIGIN
+    - CLIENT_ORIGIN_DEV
+    - CLOUDINARY_URL
+    - DATABASE_URL
+    - DISABLE_COLLECTSTATIC
+    - SECRET_KEY
+
+8. Back on GitHub again, create an env.py file and add the necessary variables:
+    - os.environ["DEV"] = “True”
+    - os.environ["SECRET_KEY"]
+    - os.environ["CLOUDINARY_URL"]
+    - os.environ["CLIENT_ORIGIN"]
+    - os.environ["CLIENT_ORIGIN_DEV"]
+    - os.environ["DATABASE_URL"]
+
+9. As shown in the Project Setup above, update settings.py file as per the instructions from Moments walkthrough.
+10. Migrate the updated database and freeze the requirements.
+11. Git add, commit, and push the changes.
+12. Back on Heroku again, go to Deploy tab and choose GitHub as your Deployment method.
+13. Connect to GitHub by clicking the Search button and choosing the correct repository.
+14. You can now choose between Enable Automatic Deploys or manually deploy the application via Deploy Branch. After Heroku finishes building the application, you can click the View button to launch and run your terminal on a new tab.
 
 **GitHub**
 
